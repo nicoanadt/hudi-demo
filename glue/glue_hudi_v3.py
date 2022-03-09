@@ -33,8 +33,8 @@ logger.info('Fetching configuration.')
 region = os.environ['AWS_DEFAULT_REGION']
 
 ###
-curatedS3BucketName = 'hudiglueblog-curateds3bucket-16xp57k12ie0q'
-rawS3BucketName = 'hudiglueblog-raws3bucket-peeeobltsx6i'
+curatedS3BucketName = 'hudiglueblog-curateds3bucket-xxxx'
+rawS3BucketName = 'hudiglueblog-raws3bucket-xxxx'
 hudiStorageType = 'CoW'
 
 ###
