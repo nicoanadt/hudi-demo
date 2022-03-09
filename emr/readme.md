@@ -8,3 +8,5 @@ spark-submit
 /usr/lib/hudi/hudi-utilities-bundle.jar
 --table-type COPY_ON_WRITE --source-ordering-field update_ts_dms --props s3://hudi-deltastream-apsoutheast1-130835040051/config/dfs-source.properties --source-class org.apache.hudi.utilities.sources.ParquetDFSSource --target-base-path s3://hudi-deltastream-apsoutheast1-130835040051/curated/employee_details/ --target-table hudi_deltastream_db.employee_details --transformer-class org.apache.hudi.utilities.transform.SqlQueryBasedTransformer --payload-class org.apache.hudi.common.model.AWSDmsAvroPayload --schemaprovider-class org.apache.hudi.utilities.schema.FilebasedSchemaProvider --enable-hive-sync
 ```
+
+We can use spark-submit or submit `Steps` to the EMR Cluster
