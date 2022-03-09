@@ -1,0 +1,30 @@
+{
+  "type" : "record",
+  "name" : "employee_details",
+  "fields" : [
+  {
+    "name" : "update_ts_dms",
+    "type" : "long"
+  }, {
+    "name" : "emp_no",
+    "type" : "long"
+  }, {
+    "name" : "name",
+    "type" : "string"
+  }, {
+    "name" : "department",
+    "type" : "string"
+  },{
+    "name" : "city",
+    "type" : ["null","string"]
+  }, {
+    "name" : "salary",
+    "type" : ["null","long"]
+  }, {
+    "name" : "schema_name",
+    "type" : "string"
+  },{
+    "name" : "table_name",
+    "type" : "string"
+  }]
+}
