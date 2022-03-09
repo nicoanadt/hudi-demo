@@ -9,5 +9,5 @@ spark-submit
 --table-type COPY_ON_WRITE --source-ordering-field update_ts_dms --props s3://hudi-deltastream-apsoutheast1-xxxx/config/dfs-source.properties --source-class org.apache.hudi.utilities.sources.ParquetDFSSource --target-base-path s3://hudi-deltastream-apsoutheast1-xxxx/curated/employee_details/ --target-table hudi_deltastream_db.employee_details --transformer-class org.apache.hudi.utilities.transform.SqlQueryBasedTransformer --payload-class org.apache.hudi.common.model.AWSDmsAvroPayload --schemaprovider-class org.apache.hudi.utilities.schema.FilebasedSchemaProvider --enable-hive-sync
 ```
 
-We can use spark-submit command above or submit `Steps` to the EMR Cluster. Sample configuration is available in the `config` folde.
+We can use spark-submit command above or submit `Steps` to the EMR Cluster. Sample configuration is available in the `config` folder.
 This sample was executed on emr-6.5.0 with Spark 3.1.2, Hive 3.1.2
