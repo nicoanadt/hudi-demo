@@ -24,5 +24,5 @@ STORED AS INPUTFORMAT
 OUTPUTFORMAT 
   'org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat'
 LOCATION
-  's3://hudi-deltastream-apsoutheast1-130835040051/curated/employee_details'
+  's3://hudi-deltastream-apsoutheast1-xxxxxxx/curated/employee_details'
 ```
